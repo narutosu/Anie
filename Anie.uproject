@@ -5,8 +5,13 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "Anie",
+			"Name": "AnieGame",
 			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "AnieEditor",
+			"Type": "Editor",
 			"LoadingPhase": "Default"
 		}
 	],
@@ -17,6 +22,18 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "CommonLoadingScreen",
+			"Enabled": true
+		},
+		{
+			"Name": "Narrative",
+			"Enabled": true
+		},
+		{
+			"Name": "Puerts",
+			"Enabled": true
 		}
 	]
 }
