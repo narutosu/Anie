@@ -1,0 +1,11 @@
+{
+  "name": "source-map-support-run",
+  "version": "1.0.0",
+  "description": "让source-map-support能在puerts中运行的必要条件",
+  "main": "./source-map-support-run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sugen@h3d.com",
+  "license": "ISC"
+}

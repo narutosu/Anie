@@ -38,6 +38,8 @@ public:
 
     virtual bool IsWatchEnabled() = 0;
 
+    virtual bool WaitDebugger() = 0;
+
     virtual void ReloadModule(FName ModuleName, const FString& JsSource) = 0;
 
     virtual void InitExtensionMethodsMap() = 0;

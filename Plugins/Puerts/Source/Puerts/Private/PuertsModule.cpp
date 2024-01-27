@@ -77,6 +77,11 @@ public:
         return Enabled && WatchEnabled;
     }
 
+    virtual bool WaitDebugger() override
+    {
+        return WaitDebug;
+    }
+
     void ReloadModule(FName ModuleName, const FString& JsSource) override
     {
         if (Enabled)
@@ -257,6 +262,8 @@ private:
     TSharedPtr<PUERTS_NAMESPACE::FJsEnv> JsEnv;
 
     bool Enabled = false;
+
+    bool WaitDebug = false;
 
     bool WatchEnabled = true;
 
