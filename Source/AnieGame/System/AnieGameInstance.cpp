@@ -20,7 +20,7 @@ bool UAnieGameInstance::Tick(float deltaSeconds)
 	if (!m_Ready)
 	{
 		bool WaitDebbuger = IPuertsModule::Get().WaitDebugger();
-		m_GameScript = MakeShared<puerts::FJsEnv>(std::make_unique<puerts::DefaultJSModuleLoader>(TEXT("JavaScript")), std::make_shared<puerts::FDefaultLogger>(), 8081);
+		m_GameScript = MakeShared<puerts::FJsEnv>(std::make_unique<puerts::DefaultJSModuleLoader>(TEXT("JavaScript")), std::make_shared<puerts::FDefaultLogger>(), 8089);
 		if (WaitDebbuger)
 		{
 			m_GameScript->WaitDebugger();

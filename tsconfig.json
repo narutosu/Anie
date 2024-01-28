@@ -4,7 +4,7 @@
 		"module": "commonjs",
 		"experimentalDecorators": true,
 		"jsx": "react",
-		"inlineSourceMap": true,
+		"sourceMap": true,
 		"typeRoots": [
 			"Typing",
 			"./node_modules/@types"

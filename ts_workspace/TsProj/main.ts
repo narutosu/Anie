@@ -1,7 +1,7 @@
 declare function require(any);
 
-import * as UE from 'ue'
-import * as Puerts from 'puerts'
+import * as UE from 'ue';
+import * as Puerts from 'puerts';
 
 if (UE.GameHelper.IsEditorMode())
 {
@@ -12,12 +12,14 @@ let gameInst = Puerts.argv.getByName("GameInstance") as UE.AnieGameInstance;
 
 gameInst.AppInit.Bind(function ()
 {
-	console.log("AppInit")
+	console.log("AppInit=");
+
 	//ClientGlobal.Instance().Init();
 	//GameGlobal.GetInstance().InitOnce(game_inst);
 });
 gameInst.JsUpdate.Bind((deltaTimeMS: number, curTimeMS: number) =>
 {
+	console.log("==");
 	// try
 	// {
 	// 	ClientGlobal.Instance().Update(deltaTimeMS, curTimeMS);
